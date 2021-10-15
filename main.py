@@ -202,7 +202,7 @@ PATH_checkpoint = './cifar_net.pth'
 # cifar_imshow()
 train(EPOCHS=1, device="cpu")
 train(EPOCHS=1, device="cuda:0")
-prit("cuda should be ~x2 faster")
+print("cuda should be ~x2 faster")
 # test_one_batch()
 # test()
 # test_per_class()
