@@ -1,3 +1,8 @@
+""" 
+Based on this tutorial: 
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -32,7 +37,6 @@ class Net(nn.Module):
 
 
 def train(device="cpu"):
-    """ Based on this tutorial: https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html"""
 
     batch_size = 32
 

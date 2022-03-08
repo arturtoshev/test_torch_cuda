@@ -1,10 +1,13 @@
+""" 
+Based on this tutorial: 
+https://www.tensorflow.org/tutorials/images/cnn
+"""
+
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
-import numpy as np
 
 
 def train(device='/gpu:0'):
-    """ Based on this tutorial: https://www.tensorflow.org/tutorials/images/cnn"""
     with tf.device(device):
         (train_images, train_labels), (test_images,
                                        test_labels) = datasets.cifar10.load_data()
