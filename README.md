@@ -125,7 +125,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 3. JAX [installation](https://github.com/google/jax). JAX requires CUDA Toolkit and cuDNN, but doesn't care much about the versions. The Toolkit has to support CUDA >= 11.1, and cuDNN has to be 805 as our Tensorflow installation uses version 8.1.0 (see installation link). For deep learning we need additional libraries, which are in the second line.
 
 ```
-pip install jax[cuda11_cudnn805] -f https://storage.googleapis.com/jax-releases/jax_releases.html
+pip install jax[cuda11_cudnn805] -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 pip install -U dm-haiku tensorflow_datasets  # additional dependencies for our test run
 ```
 
